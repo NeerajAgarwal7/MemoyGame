@@ -1,0 +1,56 @@
+.mainBut{
+    width: 200px;
+    height: 150px;
+    background-color: red;
+    color: black;
+    font-size: 28;
+    cursor: pointer;
+   
+}
+
+button{
+    width: 150px;
+    height: 150px;
+    font-size: 52;
+    background-color: blue;
+    border: 15px outset silver ; 
+}
+
+.gameBut{
+    color: blue;
+    cursor: pointer;
+    display: block ;
+}
+
+.gameBut:hover{
+    background-color: #00FF1A;
+    color: #00FF1A;
+}
+
+.mainBut:hover{
+    background-color: orange;
+    color: white;
+}
+
+body{
+    background-image: url("background.png");
+}
+
+table{
+    border: 5px solid #FF0000;
+}
+
+.gameBoard{
+    width: 50%;
+    float: left;
+
+}
+
+.scoreBoard{
+    width: 50%;
+    float: right;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 200px;
+}

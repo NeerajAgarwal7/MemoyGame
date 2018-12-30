@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Memory game</title>
+    <link rel="stylesheet" type="text/css" href="D:\HTML\Memory game\memory game style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="D:\HTML\Memory game\memory game script.js"></script>
+</head>
+
+<body>
+    <div class="gameBoard">
+        <div align="center">
+            <button type="button" class="mainBut" id="ini" onclick="iniGame()">CLICK ME TO START GAME</button>
+            <br>
+        </div>
+        <div>
+            <table id="table" align="center">
+                <tr>
+                    <td><button type="button" class="gameBut" id="11" onclick="changeClick(11)" disabled></button></td>
+                    <td><button type="button" class="gameBut" id="12" onclick="changeClick(12)" disabled></button></td>
+                    <td><button type="button" class="gameBut" id="13" onclick="changeClick(13)" disabled></button></td>
+                    <td><button type="button" class="gameBut" id="14" onclick="changeClick(14)" disabled></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="gameBut" id="21" onclick="changeClick(21)" disabled></button></td>
+                    <td><button type="button" class="gameBut" id="22" onclick="changeClick(22)" disabled></button></td>
+                    <td><button type="button" class="gameBut" id="23" onclick="changeClick(23)" disabled></button></td>
+                    <td><button type="button" class="gameBut" id="24" onclick="changeClick(24)" disabled></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="gameBut" id="31" onclick="changeClick(31)" disabled></button></td>
+                    <td><button type="button" class="gameBut" id="32" onclick="changeClick(32)" disabled></button></td>
+                    <td><button type="button" class="gameBut" id="33" onclick="changeClick(33)" disabled></button></td>
+                    <td><button type="button" class="gameBut" id="34" onclick="changeClick(34)" disabled></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="gameBut" id="41" onclick="changeClick(41)" disabled></button></td>
+                    <td><button type="button" class="gameBut" id="42" onclick="changeClick(42)" disabled></button></td>
+                    <td><button type="button" class="gameBut" id="43" onclick="changeClick(43)" disabled></button></td>
+                    <td><button type="button" class="gameBut" id="44" onclick="changeClick(44)" disabled></button></td>
+                </tr>
+            </table>
+        </div>
+7    </div>
+
+    <div class="scoreBoard">
+        <p id="moves" style="color :antiquewhite ; text-shadow: 3px 3px 0px black ; font-size :58 ; font-weight: bolder">MOVES : <span style="color :#FF8800" />0</p>
+        <p id="pairs" style="color :antiquewhite ; text-shadow: 3px 3px 0px black ; font-size :58 ; font-weight: bolder">PAIRS FOUND : <span style="color :#E1FF00" />0</p>
+    </div>
+
+</body>
+
+</html>

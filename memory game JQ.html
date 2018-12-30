@@ -1,0 +1,63 @@
+<html>
+    
+    <head>
+        <title>Memory game</title>
+        <link rel="stylesheet" type="text/css" href="D:\HTML\Memory game\memory game style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="D:\HTML\Memory game\memory game JQscript.js"></script>
+    
+    
+    </head>
+    
+    <body>
+        <div class="gameBoard">
+            <div align="center">
+                <button type="button" class="mainBut" id="ini">CLICK ME TO START GAME</button>
+                <br>
+            </div>
+            <div id="gameBox">
+                <table id="table" align="center">
+                    <tr>
+                        <td><button type="button" class="gameBut" id="11" disabled></button></td>
+                        <td><button type="button" class="gameBut" id="12" disabled></button></td>
+                        <td><button type="button" class="gameBut" id="13" disabled></button></td>
+                        <td><button type="button" class="gameBut" id="14" disabled></button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="gameBut" id="21" disabled></button></td>
+                        <td><button type="button" class="gameBut" id="22" disabled></button></td>
+                        <td><button type="button" class="gameBut" id="23" disabled></button></td>
+                        <td><button type="button" class="gameBut" id="24" disabled></button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="gameBut" id="31" disabled></button></td>
+                        <td><button type="button" class="gameBut" id="32" disabled></button></td>
+                        <td><button type="button" class="gameBut" id="33" disabled></button></td>
+                        <td><button type="button" class="gameBut" id="34" disabled></button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="gameBut" id="41" disabled></button></td>
+                        <td><button type="button" class="gameBut" id="42" disabled></button></td>
+                        <td><button type="button" class="gameBut" id="43" disabled></button></td>
+                        <td><button type="button" class="gameBut" id="44" disabled></button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+        <div class="scoreBoard">
+                <svg height="100" width="500">
+                        <defs>
+                          <filter id="f1" x="0" y="0">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+                          </filter>
+                        </defs>
+                       <rect height="100" width="500" stroke="green" stroke-width="3" fill="yellow" filter="url(#f1)" />
+                       <text fill="red" font-size="40" font-family="Verdana" x="45" y="60">Memory Game Score</text>
+            <p id="moves" style="color :antiquewhite ; text-shadow: 3px 3px 0px black ; font-size :58 ; font-weight: bolder">MOVES : 0</p>
+            <p id="pairs" style="color :antiquewhite ; text-shadow: 3px 3px 0px black ; font-size :58 ; font-weight: bolder">PAIRS FOUND : 0</p>
+        </div>
+
+    </body>
+    
+    </html>
